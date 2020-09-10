@@ -5,12 +5,142 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quiz Application</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/b527bec78a.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="/public/styles/css/styles.css">
   <script defer src="/src/app.js"></script>
 </head>
 
-<body>
-  <h1>Hello world, this is a quiz app</h1>
+<body class="container-fluid">
+  <!-- navigaton bar -->
+  <nav>
+    <h1><i class="fas fa-bookmark"></i><span>Luma</span>
+    </h1>
+    <ul class="nav--links">
+      <li><a href="">Home</a> </li>
+      <li><a href="">Paths</a> </li>
+      <li><a href="">Log in</a> </li>
+      <li><a href="">Get Started</a> </li>
+    </ul>
+    <!-- <li>Toggle<span>🌚</span></li> -->
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </nav>
+  <!-- intro section -->
+  <div class="intro">
+    <h1>Learning has never been easier.</h1>
+    <p>Explore a wide range of courses and learn at your pace✨</p>
+    <button>Get Started</button>
+    <small>Are you a teacher?</small>
+  </div>
+
+
+  <!-- features -->
+  <div class="three-grid features">
+    <div class="__one">
+      <div><img src="" alt="academia"></div>
+      <div>
+        <h2>1000+ quiz questions</h2>
+        <p>Explore tons of questions relating to your field.</p>
+      </div>
+    </div>
+    <div class="__two">
+      <div><img src="" alt="academia"></div>
+      <div>
+        <h2>100% transparency</h2>
+        <p>The questions are picked and vetted by experts but marked by our computers.</p>
+      </div>
+    </div>
+    <div class="__three">
+      <div><img src="" alt="academia"></div>
+      <div>
+        <h2>Unlimited Access</h2>
+        <p>Once you sign up, you have unlimited access to a wode range of questions for life.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- cards slideshow -->
+  <div class="cards-show">
+    <div class="--cards">
+      <div>
+        <h3>Famished is to hunger as</h3>
+      </div>
+      <div>
+        <table>
+          <td>
+            <tr>A</tr>
+            <tr>B</tr>
+            <tr>C</tr>
+          </td>
+          <td>
+            <tr>thirst is to fatigue</tr>
+            <tr>fatigue is to petulant</tr>
+            <tr>petulant is to sulky</tr>
+          </td>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- learning paths -->
+  <div class="learning-path">
+    <div class="grid">
+      <div class="--grid">
+        <div><img src="" alt=""></div>
+        <div>
+          <h1>English</h1>
+          <small>Get Started</small>
+        </div>
+      </div>
+      <div class="--grid">
+        <div><img src="" alt=""></div>
+        <div>
+          <h1>English</h1>
+          <small>Get Started</small>
+        </div>
+      </div>
+      <div class="--grid">
+        <div><img src="" alt=""></div>
+        <div>
+          <h1>English</h1>
+          <small>Get Started</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer>
+    <div class="grid">
+      <div class="__about">
+        <h1>Luma</h1>
+        <p>Luma is a beautifully crafted user interface for modern Education Platforms. It brings </p>
+      </div>
+      <div class="__contact">
+        <ul>
+          <li>About</li>
+          <li>Contact us</li>
+          <li>Terms</li>
+          <li>Privacy policy</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <!-- bootstrap code -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+  </script>
 </body>
 
 </html>

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -5,8 +6,112 @@
 }
 
 body {
-  background-color: #1e2021;
-  color: #f1f1f1f1;
+  background-color: #1d1f2a;
+  color: #fff;
+  font-family: "Nunito", sans-serif;
+}
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 15vh;
+}
+@media screen and (max-width: 768px) {
+  nav {
+    justify-content: space-around;
+  }
+}
+nav a {
+  color: #fff;
+}
+nav h1 span {
+  padding-left: 0.5rem;
+}
+@media screen and (max-width: 768px) {
+  nav h1 {
+    font-size: 1rem;
+  }
+}
+nav .nav--links {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+  font-size: 1rem;
+}
+@media screen and (max-width: 768px) {
+  nav .nav--links {
+    position: absolute;
+    right: 0;
+    height: 85vh;
+    top: 15vh;
+    width: 60%;
+    flex-direction: column;
+    background-color: #262936;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+}
+@media screen and (max-width: 768px) {
+  nav .nav--links li {
+    opacity: 0;
+  }
+}
+nav .burger {
+  display: none;
+}
+nav .burger:hover {
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  nav .burger {
+    display: block;
+  }
+}
+nav .burger div {
+  background-color: #fff;
+  transition: all 1s ease;
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+}
+@media screen {
+  nav .nav-active {
+    transform: translateX(0%);
+  }
+}
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(8px);
+  }
+}
+nav .toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+nav .toggle .line2 {
+  opacity: 0;
+}
+nav .toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
 }
 
 /*# sourceMappingURL=styles.css.map */
